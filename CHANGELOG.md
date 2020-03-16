@@ -1,5 +1,79 @@
 <a name=""></a>
-# [](https://github.com/NervJS/taro/compare/v2.0.4...v) (2020-02-18)
+# [](https://github.com/NervJS/taro/compare/v2.0.7...v) (2020-03-16)
+
+
+
+<a name="2.0.7"></a>
+## [2.0.7](https://github.com/NervJS/taro/compare/v2.0.6...v2.0.7) (2020-03-16)
+
+
+### Bug Fixes
+
+* **mini-runner:** 修复多端文件编译时 js 丢失的问题，close [#5687](https://github.com/NervJS/taro/issues/5687) ([e5236d8](https://github.com/NervJS/taro/commit/e5236d8))
+* **mini-runner:** 解决使用 addChunkPages 时子包组件插入公共引用的问题 ([0cbce17](https://github.com/NervJS/taro/commit/0cbce17))
+* **swan:** 修复百度小程序component shouldComponentUpdate不生效 ([9167bb8](https://github.com/NervJS/taro/commit/9167bb8))
+* **tt:** 修复头条真机调试报错，fix [#5688](https://github.com/NervJS/taro/issues/5688) ([d2b4dde](https://github.com/NervJS/taro/commit/d2b4dde))
+* **types:** 修复 CanvasContext 的部分属性类型。 ([#5647](https://github.com/NervJS/taro/issues/5647)) ([4af1ca1](https://github.com/NervJS/taro/commit/4af1ca1))
+* **types:** 修复 getExtConfigSync 的部分属性类型。 ([#5695](https://github.com/NervJS/taro/issues/5695)) ([cef8b46](https://github.com/NervJS/taro/commit/cef8b46))
+
+
+
+<a name="2.0.6"></a>
+## [2.0.6](https://github.com/NervJS/taro/compare/v2.0.5...v2.0.6) (2020-03-09)
+
+
+### Bug Fixes
+
+* **taro component:** 1.3.9版本误删,导致无法衔接滚动 ([7425462](https://github.com/NervJS/taro/commit/7425462))
+* get app for h5 fix [#4763](https://github.com/NervJS/taro/issues/4763) ([529f4dc](https://github.com/NervJS/taro/commit/529f4dc))
+* rem in h5 component fix [#5309](https://github.com/NervJS/taro/issues/5309) ([458bb21](https://github.com/NervJS/taro/commit/458bb21))
+* **components:** 修复canvas可能取不到props的问题 ([c5697cb](https://github.com/NervJS/taro/commit/c5697cb))
+* **components:** 修复navigator、controls、video组件可能取不到props的问题 ([10762b0](https://github.com/NervJS/taro/commit/10762b0))
+* **components:** 去除canvas、tabbar内一些比较hacky的写法 ([d7fb5a9](https://github.com/NervJS/taro/commit/d7fb5a9))
+* **mini-runner:** 使用 addChunkPages 时，页面引入的组件也需要引用抽离的 chunks，close [#5580](https://github.com/NervJS/taro/issues/5580) ([fcaefce](https://github.com/NervJS/taro/commit/fcaefce))
+* **mini-runner:** 修复 watch 时文件过多爆栈的问题 && 修改 app.js 时出错的问题，closes [#5630](https://github.com/NervJS/taro/issues/5630)，closes [#5433](https://github.com/NervJS/taro/issues/5433) ([7480ff7](https://github.com/NervJS/taro/commit/7480ff7))
+* **mini-runner:** 修复图片等静态资源编译路径，close [#5605](https://github.com/NervJS/taro/issues/5605) ([edb84ba](https://github.com/NervJS/taro/commit/edb84ba))
+* **mini-runner:** 缺少 addChunkPages 不存在判断 ([c2d4c3c](https://github.com/NervJS/taro/commit/c2d4c3c))
+* **swan:** 修复百度小程序 ref ([e4ec6a2](https://github.com/NervJS/taro/commit/e4ec6a2))
+* **taro-cli:** 修复基于taro第三方ui 组件循环依赖时打包失败， close [#5620](https://github.com/NervJS/taro/issues/5620) ([#5623](https://github.com/NervJS/taro/issues/5623)) ([77e11cd](https://github.com/NervJS/taro/commit/77e11cd))
+* **taro-components:** 修复 scroll-view 内不太严谨的写法 ([11b0026](https://github.com/NervJS/taro/commit/11b0026))
+* **taro-components-rn:** 修复Input组件 ([54b2a78](https://github.com/NervJS/taro/commit/54b2a78))
+* fix unexpected comma ([3c1f507](https://github.com/NervJS/taro/commit/3c1f507))
+* **taro-components:** 修复定时器在组件更新时未取消问题 ([291feae](https://github.com/NervJS/taro/commit/291feae))
+* **taro-h5:** 修复chooseVideo生成的blob对象缺少类型的问题 ([f8d1929](https://github.com/NervJS/taro/commit/f8d1929))
+* **types:** LivePlayerProps ([#5559](https://github.com/NervJS/taro/issues/5559)) ([58a9a2d](https://github.com/NervJS/taro/commit/58a9a2d))
+* ignore spec-files under sourceRoot fix [#3307](https://github.com/NervJS/taro/issues/3307) ([a5e8a1b](https://github.com/NervJS/taro/commit/a5e8a1b))
+
+
+### Features
+
+* **taro-h5:** add capture attribute support for chooseImage api when… ([#5608](https://github.com/NervJS/taro/issues/5608)) ([2da3c2b](https://github.com/NervJS/taro/commit/2da3c2b))
+* complete navig、form、media typing with docs ([eab3a52](https://github.com/NervJS/taro/commit/eab3a52))
+* complete Open typing with docs ([0acb787](https://github.com/NervJS/taro/commit/0acb787))
+* upload all components types with docs ([1af2607](https://github.com/NervJS/taro/commit/1af2607))
+
+
+
+<a name="2.0.5"></a>
+## [2.0.5](https://github.com/NervJS/taro/compare/v2.0.4...v2.0.5) (2020-02-27)
+
+
+### Bug Fixes
+
+* **cli:** 旧项目升级未自动更新RN版本 ([cd224a4](https://github.com/NervJS/taro/commit/cd224a4))
+* **cli:** 模板引用错误导致模板生成失败，进而必然导致转换失败 ([#5554](https://github.com/NervJS/taro/issues/5554)) ([9404423](https://github.com/NervJS/taro/commit/9404423))
+* **components:** 修复：当Checkbox想要条件渲染时，并且Checkbox占位符为null时引发的异常 ([#5507](https://github.com/NervJS/taro/issues/5507)) ([049d0ae](https://github.com/NervJS/taro/commit/049d0ae))
+* **mini-runner:** 与原生小程序混写时支持解析样式 ([8de0f55](https://github.com/NervJS/taro/commit/8de0f55))
+* **mini-runner:** 与原生小程序混写时支持解析模板 ([2494fff](https://github.com/NervJS/taro/commit/2494fff))
+* **mini-runner:** 修复快应用引入自定义组件时路径问题，close [#5555](https://github.com/NervJS/taro/issues/5555) ([894ca13](https://github.com/NervJS/taro/commit/894ca13))
+* **mini-runner:** 尝试修复监听报错的问题 ([b64192b](https://github.com/NervJS/taro/commit/b64192b))
+* **taro:** append QQ,JD ENV_TYPEs for ts type definition ([#5515](https://github.com/NervJS/taro/issues/5515)) ([c376cfd](https://github.com/NervJS/taro/commit/c376cfd))
+
+
+### Features
+
+* **mini-runner:** 增加 addChunkPages 配置，允许为分包单独配置自己公共文件，close [#5511](https://github.com/NervJS/taro/issues/5511) ([06f23b5](https://github.com/NervJS/taro/commit/06f23b5))
+* **taro-router:** 新增路由拦截功能beforeRouteLeave ([b492d3d](https://github.com/NervJS/taro/commit/b492d3d))
 
 
 
